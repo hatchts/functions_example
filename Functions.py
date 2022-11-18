@@ -8,13 +8,12 @@
 while True:
     while True:
      user_number = float(input("What number to convert?"))
-     user_unit = input("What unit is your number?")
-    if user_number .isdigit():
-     user_number = float (user_number)
+     if user_number .isdigit():
+         user_number = float (user_number)
     else:
-     print ("please use a number")
-
-
+     print ('please use a number')
+     user_unit = input("What unit is your number?")
+    
 
     # to convert in to mm --> in x 25.4
     # to convert mm to in --> mm / 25.4
