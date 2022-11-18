@@ -7,7 +7,7 @@
 # Output Answer to the User
 while True:
     while True:
-     user_number = float(input("What number to convert?"))
+     user_number = input("What number to convert?")
      if user_number .isdigit():
          user_number = float (user_number)
     else:
