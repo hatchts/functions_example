@@ -6,27 +6,34 @@
 # Convert the Length to the Correcd Unit
 # Output Answer to the User
 while True:
-  user_number = float(input("What number to convert?"))
-  user_unit = input("What unit is your number?")
+    while True:
+     user_number = float(input("What number to convert?"))
+     user_unit = input("What unit is your number?")
+    if user_number .isdigit():
+     user_number = float (user_number)
+    else:
+     print ("please use a number")
+
+
 
     # to convert in to mm --> in x 25.4
     # to convert mm to in --> mm / 25.4
 
     # user gives in unit
 
-  if(user_unit == 'in'):
+    if(user_unit == 'in'):
         # perform in to mm
         conv_number = user_number * 25.4
         break
 
-  elif(user_unit == 'mm'):
+    elif(user_unit == 'mm'):
         # perform mm to in
         conv_number = user_number / 25.4
         conv_unit = 'in'
         break
-  else:
+    else:
         print('That is not a valid unit')
 
 
-print(conv_number)
+print(conv_number, conv_unit)
 print(user_unit)
