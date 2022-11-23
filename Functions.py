@@ -28,7 +28,7 @@ def user_parser(user_input):
     print ("That is not a valid unit")
     valid_data = False 
 
-    return number , unit
+    return number , unit , valid_data
  
 
 while True:
