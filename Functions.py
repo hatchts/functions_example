@@ -28,15 +28,17 @@ def user_parser(user_input):
     print ("That is not a valid unit")
     valid_data = False 
 
-    return number , unit , valid_data
+    return number , unit 
  
 
 while True:
  user_input = input("number and unit to convert ")
  user_number, user_unit = user_parser(user_input)
  # check if there are invalid 
- print('User number', user_number)
- print('user unit', user_unit)
+
+ if valid_data:
+  print('User number', user_number)
+  print('user unit', user_unit)
 user_parser(user_input)
 # while True:
 # user_number = input("What number to convert? ")
