@@ -5,6 +5,8 @@
 # get the unit from the user
 # convert the length to the correct unit
 # output the answer to the user
+valid_data = True
+
 def user_parser(user_input):
 # Do something
 # Separate the number from unit
@@ -15,6 +17,9 @@ def user_parser(user_input):
     number = float(number)
  else:
     print ("That is not a valid number")
+    valid_data = False
+
+
 
     
 
@@ -23,11 +28,12 @@ def user_parser(user_input):
     print ("That is not a valid unit")
 
     return number , unit
- print ('number' , values [0]) 
- print ('unit', values [1])
+ 
+
 while True:
  user_input = input("number and unit to convert ")
  user_number, user_unit = user_parser(user_input)
+ # check if there are invalid 
  print('User number', user_number)
  print('user unit', user_unit)
 user_parser(user_input)
