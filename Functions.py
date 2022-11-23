@@ -19,8 +19,10 @@ def user_parser(user_input):
     
 
  unit = values[1]
- if unit != 'in':
+ if unit != 'in' or unit != 'mm':
     print ("That is not a valid unit")
+
+    return number , unit
  print ('number' , values [0]) 
  print ('unit', values [1])
 while True:
