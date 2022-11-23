@@ -18,11 +18,16 @@ def user_parser(user_input):
 
     
 
- unit = values [1]
+ unit = values[1]
+ if unit != 'in':
+    print ("That is not a valid unit")
  print ('number' , values [0]) 
  print ('unit', values [1])
 while True:
  user_input = input("number and unit to convert ")
+ user_number, user_unit = user_parser(user_input)
+ print('User number', user_number)
+ print('user unit', user_unit)
 user_parser(user_input)
 # while True:
 # user_number = input("What number to convert? ")
