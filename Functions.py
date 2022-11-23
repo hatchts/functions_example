@@ -1,9 +1,6 @@
 # Conversion Calculator
 # By: Stacy Hatch
 
-# Conversion Calculator
-# By: Scott Hadzik
-
 # user input regarding the length to convert
 # get the unit from the user
 # convert the length to the correct unit
@@ -12,8 +9,8 @@ def user_parser(user_input):
 # Do something
 # Separate the number from unit
  values = user_input.rsplit(" ")
- print (values) 
-
+ print ('number' , values [0]) 
+ print ('unit', values [1])
 while True:
  user_input = input("number and unit to convert ")
 user_parser(user_input)
