@@ -17,6 +17,7 @@ def user_parser(user_input):
     number = float(number)
  else:
     print ("That is not a valid number")
+    valid_data = False
     
 
 
@@ -31,14 +32,15 @@ def user_parser(user_input):
     return number , unit 
  
 
-while True:
- user_input = input("number and unit to convert ")
- user_number, user_unit = user_parser(user_input)
+while True: # continue until user exits
+    while True: # check for valid data
+      user_input = input("number and unit to convert ")
+      user_number, user_unit = user_parser(user_input)
  # check if there are invalid 
 
- if valid_data:
-  print('User number', user_number)
-  print('user unit', user_unit)
+    if valid_data:
+     print('User number', user_number)
+     print('user unit', user_unit)
 user_parser(user_input)
 # while True:
 # user_number = input("What number to convert? ")
@@ -49,12 +51,11 @@ user_parser(user_input)
 # print ('please use a number')
 # user_unit = input("What unit is your number?")
 
-# if(user_unit == 'in'):
-# #perform in to mm
-# conv_number = user_number * 25.4
-# conv_unit = 'mm'
-# break
-# elif(user_unit == 'mm'):
+if(user_unit == 'in'):
+     #perform in to mm
+     conv_number = user_number * 25.4
+     conv_unit = 'mm'
+elif(user_unit == 'mm'):
 # #perform mm to in
 # conv_number = user_number / 25.4
 # conv_unit = 'in'
