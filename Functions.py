@@ -9,6 +9,16 @@ def user_parser(user_input):
 # Do something
 # Separate the number from unit
  values = user_input.rsplit(" ")
+
+ number = values[0]
+ if number.isdigit():
+    number = float(number)
+ else:
+    print ("That is not a valid number")
+
+    
+
+ unit = values [1]
  print ('number' , values [0]) 
  print ('unit', values [1])
 while True:
