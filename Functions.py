@@ -17,7 +17,7 @@ def user_parser(user_input):
     number = float(number)
  else:
     print ("That is not a valid number")
-    valid_data = False
+    
 
 
 
@@ -26,6 +26,7 @@ def user_parser(user_input):
  unit = values[1]
  if unit != 'in' or unit != 'mm':
     print ("That is not a valid unit")
+    valid_data = False 
 
     return number , unit
  
